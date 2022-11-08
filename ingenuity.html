@@ -3,31 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Narkomfin</title>
+    <title>Ingenuity</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="javascripts/jquery-3.6.1.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      $(function() {
-        $('.sidebar a').each(function() {
-          $(this).on('click', function(e) {
-            e.preventDefault();
-            var scrollTo = $(this).attr('href');
-            var whitespace = scrollTo == '#s1' ? 70 : 30;
-          $('html,body').animate({
-            scrollTop: $(scrollTo).offset().top - whitespace
-            }, 1000);
-          });
-        });
-      });
-    </script>
+    <script src="javascripts/bar.js"></script>
+
   </head>
 
   <body>
     <div class="allabout">
       <div class="menubar">
-        <img src="Images/logo.svg" alt="">
-        <a href="">text</a>
-        <a href="">text</a>
+        <a href="index.html"><img src="Images/logo.svg" alt=""></a>
+        <a href="">О проекте</a>
       </div>
 
 
